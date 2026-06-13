@@ -19,6 +19,9 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Dotnet Info
+      run: dotnet --info
+
     - name: Restore dependencies
       run: dotnet restore
       env:
