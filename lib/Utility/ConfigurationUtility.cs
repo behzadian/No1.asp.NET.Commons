@@ -6,7 +6,7 @@ namespace No1.asp.NET.Commons.Utility;
 
 public static class ConfigurationUtility
 {
-	public static IConfiguration Configurations { get; private set; } = Configurations = new ConfigurationBuilder()
+	public static IConfiguration Configurations { get; } = new ConfigurationBuilder()
 		.AddJsonFile("appsettings.json", optional: true)
 		.AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", optional: true)
 		.AddEnvironmentVariables()
