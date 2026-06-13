@@ -19,7 +19,7 @@ jobs:
       env:
         NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Dotnet Info
+    - name: .NET Information
       run: dotnet --info
 
     - name: Restore dependencies
