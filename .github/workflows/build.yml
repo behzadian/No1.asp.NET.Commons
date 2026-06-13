@@ -7,16 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
 
     steps:
-    - name: NuGet login (OIDC → temp API key)
-      uses: NuGet/login@v1
-      id: login
-      with:
-        user: ${{ vars.NUGET_USER }}
-
     - uses: actions/checkout@v6
 
     - name: Setup .NET
