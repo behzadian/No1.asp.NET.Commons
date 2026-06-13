@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using No1.asp.NET.Commons.Exceptions;
+using No1.Commons.Extensions;
 
 namespace No1.asp.NET.Commons.Utility;
 
