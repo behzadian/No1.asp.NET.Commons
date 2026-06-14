@@ -9,26 +9,31 @@
 		<IsPackable>true</IsPackable>
 		<AssemblyName>No1.asp.NET.Commons</AssemblyName>
 		<RootNamespace>No1.asp.NET.Commons</RootNamespace>
+		<Title>No1.asp.NET.Commons</Title>
+		<Description>Contains general utility &amp; helper classes</Description>
+		<PackageProjectUrl>https://github.com/behzadian/No1.asp.NET.Commons</PackageProjectUrl>
 		<PackageId>No1.asp.NET.Commons</PackageId>
 		<Authors>Hank Benz</Authors>
 		<Company>No1</Company>
 		<Product>No1.asp.NET.Commons</Product>
-		<Version>1.1.0.0</Version>
+		<Version>1.1.1</Version>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>git@github.com:behzadian/No1.asp.NET.Commons.git</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<NoWarn>CS1591,SA1600,SA1200,SA1601,SA1633,SA1500,RCS1194,SA1300</NoWarn>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-	</PropertyGroup>
-	<PropertyGroup>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<AnalysisMode>AllEnabledByDefault</AnalysisMode>
 		<AnalysisLevel>latest</AnalysisLevel>
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 	</PropertyGroup>
-
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 	
 	<ItemGroup>
 		<!-- Microsoft Code Analysis -->
@@ -57,7 +62,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="README.md" Pack="true" PackagePath="\" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables"/>
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json"/>
 		<PackageReference Include="Microsoft.Extensions.Configuration.Binder"/>
