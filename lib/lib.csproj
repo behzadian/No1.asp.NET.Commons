@@ -16,7 +16,7 @@
 		<Authors>Hank Benz</Authors>
 		<Company>No1</Company>
 		<Product>No1.asp.NET.Commons</Product>
-		<Version>1.1.1</Version>
+		<Version>1.1.2</Version>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>git@github.com:behzadian/No1.asp.NET.Commons.git</RepositoryUrl>
